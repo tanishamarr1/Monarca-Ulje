@@ -1,20 +1,11 @@
-/**
- * MONARCA ULJE — main.js
- * Navbar glassmorphism, mobile menu, FAQ accordion,
- * contact form, scroll reveal, butterfly particles
- */
 
 'use strict';
 
-/* ============================================================
-   UTILITY
-   ============================================================ */
+
 function qs(sel, root = document) { return root.querySelector(sel); }
 function qsa(sel, root = document) { return [...root.querySelectorAll(sel)]; }
 
-/* ============================================================
-   NAVBAR — Glassmorphism on scroll + mobile toggle
-   ============================================================ */
+
 (function initNavbar() {
   const navbar     = qs('.navbar');
   const toggle     = qs('.nav-toggle');
@@ -60,15 +51,6 @@ function qsa(sel, root = document) { return [...root.querySelectorAll(sel)]; }
   });
 })();
 
-
-/* ============================================================
-   PARTICLES — removed, no emoji particles in redesign
-   ============================================================ */
-
-
-/* ============================================================
-   FAQ ACCORDION
-   ============================================================ */
 (function initFAQ() {
   qsa('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
